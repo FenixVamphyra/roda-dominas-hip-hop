@@ -1,5 +1,5 @@
 /* Service worker complementar: preserva o HTML do aplicativo e melhora atualização/offline. */
-const CACHE_NAME = 'roda-dominas-pwa-v4';
+const CACHE_NAME = 'roda-dominas-pwa-v5';
 const SCOPE_URL = self.registration.scope;
 const APP_URL = new URL('index.html', SCOPE_URL).href;
 const ROOT_URL = new URL('./', SCOPE_URL).href;
@@ -8,8 +8,8 @@ const CORE = [
   APP_URL,
   new URL('projecao.html', SCOPE_URL).href,
   new URL('manifest.webmanifest', SCOPE_URL).href,
-  new URL('icons/icon-192.png', SCOPE_URL).href,
-  new URL('icons/icon-512.png', SCOPE_URL).href
+  new URL('icon-192.png', SCOPE_URL).href,
+  new URL('icon-512.png', SCOPE_URL).href
 ];
 
 self.addEventListener('install', event => {
