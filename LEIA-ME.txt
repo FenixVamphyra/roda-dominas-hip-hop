@@ -1,0 +1,26 @@
+RODA DE CONVERSA · SEMANA DO HIP-HOP — DOMINA’S
+
+PACOTE PWA APRIMORADO
+- index.html: aplicativo original preservado com uma camada adicional de controles da mediadora.
+- projecao.html: tela pública separada, com cronômetro/título/tema/texto em alto contraste.
+- manifest.webmanifest, sw.js e icons/: suporte à instalação como PWA e cache de arquivos essenciais.
+
+COMO USAR A PROJEÇÃO
+1. Abra o aplicativo e toque em “Central da mediadora” se o painel estiver minimizado.
+2. Escolha “Abrir tela do telão”. Se o navegador bloquear a janela, permita pop-ups para o site e tente novamente.
+3. Escolha “Cronômetro grande”, “Tema / pergunta” ou “Texto livre”. Edite o título/texto e toque em “Atualizar telão”.
+4. Para o cronômetro, escolha os minutos e use Iniciar, Pausar, Reiniciar ou +30 segundos.
+5. A tela pública e a central devem estar abertas no mesmo navegador e na mesma origem para sincronizar.
+
+AJUSTES
+- Zoom da interface, tamanho geral do texto, fonte do corpo e fonte dos títulos são controles locais da interface.
+- Na tela pública, use A−/A+ para ajustar a composição, o seletor para mudar a fonte e ⛶ para tela cheia.
+
+CONECTAR AO PROJETOR
+A tela pública não realiza, sozinha, a conexão física/sem fio. Use um método compatível com o seu equipamento: transmissão Google Cast/Chromecast quando disponível, espelhamento sem fio compatível (por exemplo, Miracast em equipamentos compatíveis) ou adaptador HDMI compatível com o celular. O procedimento exato depende dos modelos de celular, TV/projetor e adaptador. Teste antes do evento.
+
+INSTALAÇÃO ANDROID
+Este pacote é um PWA, não um APK. Para instalar como aplicativo pelo Chrome, publique a pasta inteira em um endereço HTTPS, abra esse endereço no Android e escolha “Instalar app” ou “Adicionar à tela inicial”. O uso offline depende de abrir o aplicativo online pelo menos uma vez e do suporte do navegador. A geração de APK pode ser considerada depois de publicar e validar o PWA.
+
+NOTA DE VALIDAÇÃO
+A camada nova foi adicionada sem reescrever o bundle React original. A sincronização entre janelas depende do suporte do navegador a BroadcastChannel ou ao evento de armazenamento. O funcionamento com o projetor físico precisa ser testado no equipamento real.

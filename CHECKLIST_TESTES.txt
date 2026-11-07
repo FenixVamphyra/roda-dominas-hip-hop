@@ -1,0 +1,15 @@
+CHECKLIST DE TESTE — RODA DOMINA’S
+
+Antes de publicar:
+[ ] Abrir index.html e confirmar que as telas originais continuam presentes.
+[ ] Abrir Central da mediadora > Abrir tela do telão.
+[ ] Selecionar Cronômetro grande, iniciar, pausar, reiniciar e adicionar 30 segundos.
+[ ] Selecionar Tema/pergunta, digitar um texto e tocar em Atualizar telão.
+[ ] Selecionar Texto livre e verificar que a tela pública não mostra a interface de navegação do aplicativo.
+[ ] Testar zoom, fonte do título e fonte do texto na interface.
+[ ] Testar A−/A+, seletor de fonte e tela cheia na tela pública.
+[ ] Testar em Android/Chrome e em um computador antes do evento.
+[ ] Testar a conexão real com TV/projetor e conferir legibilidade a partir do fundo da sala.
+[ ] Confirmar funcionamento offline após abrir uma vez conectado.
+
+Limite conhecido: o ambiente de construção não permite simular um projetor físico nem validar todos os cliques do bundle React. Não considerar o teste de equipamento concluído até testar no local.
