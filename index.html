@@ -1559,8 +1559,8 @@ input:focus,select:focus,textarea:focus{
   <meta name="apple-mobile-web-app-title" content="Roda Domina's">
   <meta name="application-name" content="Roda Domina's">
   <link rel="manifest" href="./manifest.webmanifest">
-  <link rel="icon" type="image/png" sizes="192x192" href="./icon-192.png">
-  <link rel="apple-touch-icon" href="./icon-192.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="./icons/icon-192.png">
+  <link rel="apple-touch-icon" href="./icons/icon-192.png">
 
   <style id="dominas-mobile-adaptacao">
 /* Camada complementar: responsividade e toque, sem substituir cores, temas ou componentes originais. */
@@ -1634,7 +1634,7 @@ if ('serviceWorker' in navigator && (location.protocol === 'https:' || location.
 body{font-family:var(--dominas-body-font)}
 h1,h2,h3,h4,[class*="text-4xl"],[class*="text-5xl"],[class*="text-6xl"]{font-family:var(--dominas-title-font)}
 #dominas-control-panel{position:fixed;z-index:2147483000;right:12px;bottom:12px;width:min(360px,calc(100vw - 24px));max-height:min(78vh,720px);overflow:auto;background:#170d0bf2;color:#fff;border:1px solid #c17a43;border-radius:16px;box-shadow:0 12px 40px #0009;font:14px/1.4 Inter,Arial,sans-serif;backdrop-filter:blur(12px)}
-#dominas-control-panel *{box-sizing:border-box}#dominas-control-panel .dp-head{display:flex;align-items:center;justify-content:space-between;padding:12px 14px;background:#2b1712;border-radius:16px 16px 0 0;position:sticky;top:0}#dominas-control-panel .dp-head strong{font-size:15px}#dominas-control-panel button,#dominas-control-panel select,#dominas-control-panel input,#dominas-control-panel textarea{font:inherit}#dominas-control-panel button{cursor:pointer;border:1px solid #9b6745;background:#3b2119;color:#fff;border-radius:10px;padding:9px 10px}#dominas-control-panel button.primary{background:#e6a24c;color:#21100a;border-color:#e6a24c;font-weight:800}#dominas-control-panel .dp-body{padding:12px;display:grid;gap:10px}#dominas-control-panel .dp-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}#dominas-control-panel label{display:grid;gap:5px;color:#f6d9bd;font-size:12px}#dominas-control-panel input[type=range],#dominas-control-panel select,#dominas-control-panel textarea{width:100%}#dominas-control-panel select,#dominas-control-panel textarea{background:#241611;color:#fff;border:1px solid #74503c;border-radius:8px;padding:8px}#dominas-control-panel textarea{min-height:64px;resize:vertical}#dominas-control-panel .dp-note{font-size:12px;color:#e3c4aa}#dominas-control-panel .dp-hidden{display:none!important}#dominas-control-toggle{position:fixed;z-index:2147483001;right:12px;bottom:12px;border:1px solid #e6a24c;background:#26140e;color:#fff;border-radius:999px;padding:12px 15px;font:700 14px Inter,Arial,sans-serif;box-shadow:0 4px 18px #0008}
+#dominas-control-panel *{box-sizing:border-box}#dominas-control-panel .dp-head{display:flex;align-items:center;justify-content:space-between;padding:12px 14px;background:#2b1712;border-radius:16px 16px 0 0;position:sticky;top:0}#dominas-control-panel .dp-head strong{font-size:15px}#dominas-control-panel button,#dominas-control-panel select,#dominas-control-panel input,#dominas-control-panel textarea{font:inherit}#dominas-control-panel button{cursor:pointer;border:1px solid #9b6745;background:#3b2119;color:#fff;border-radius:10px;padding:9px 10px}#dominas-control-panel button.primary{background:#e6a24c;color:#21100a;border-color:#e6a24c;font-weight:800}#dominas-control-panel .dp-body{padding:12px;display:grid;gap:10px}#dominas-control-panel .dp-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}#dominas-control-panel label{display:grid;gap:5px;color:#f6d9bd;font-size:12px}#dominas-control-panel input[type=range],#dominas-control-panel select,#dominas-control-panel textarea{width:100%}#dominas-control-panel select,#dominas-control-panel textarea{background:#241611;color:#fff;border:1px solid #74503c;border-radius:8px;padding:8px}#dominas-control-panel textarea{min-height:64px;resize:vertical}#dominas-control-panel .dp-note{font-size:12px;color:#e3c4aa}#dominas-control-panel .dp-hidden{display:none!important}#dominas-control-panel.dp-hidden{display:none!important}#dominas-control-toggle{position:fixed;z-index:2147483001;right:12px;bottom:12px;border:1px solid #e6a24c;background:#26140e;color:#fff;border-radius:999px;padding:12px 15px;font:700 14px Inter,Arial,sans-serif;box-shadow:0 4px 18px #0008}
 @media(max-width:520px){#dominas-control-panel{right:8px;bottom:8px;width:calc(100vw - 16px);max-height:76vh}#dominas-control-panel .dp-grid{gap:6px}}
 </style>
 <div id="dominas-control-panel" class="dp-hidden" aria-label="Controles extras da mediadora">
@@ -1653,7 +1653,7 @@ h1,h2,h3,h4,[class*="text-4xl"],[class*="text-5xl"],[class*="text-6xl"]{font-fam
   <p class="dp-note">As opções de zoom e fontes afetam a interface local. A tela pública tem seus próprios controles visuais de alto contraste.</p>
  </div>
 </div>
-<button id="dominas-control-toggle">🎤 Mediadora</button>
+<button id="dominas-control-toggle" class="dp-hidden">🎤 Mediadora</button>
 <script id="dominas-projection-control-v1">
 (function(){
  const $=id=>document.getElementById(id); const panel=$('dominas-control-panel'), body=$('dp-body'), toggle=$('dominas-control-toggle');
