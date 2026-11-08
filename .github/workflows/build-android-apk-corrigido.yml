@@ -34,12 +34,13 @@ jobs:
         shell: bash
         run: |
           mkdir -p android/app/src/main/java/br/com/fenixvamphyra/rodadominas android/app/src/main/assets android/app/src/main/res/mipmap-mdpi android/app/src/main/res/mipmap-hdpi android/app/src/main/res/mipmap-xhdpi android/app/src/main/res/mipmap-xxhdpi android/app/src/main/res/mipmap-xxxhdpi
-          cp index.html android/app/src/main/assets/index.html
+          cp index.html           cp index.html android/app/src/main/assets/index.html
+          cp icon-192.png icon-512.png manifest.webmanifest projecao.html android/app/src/main/assets/
           cp icon-512.png android/app/src/main/res/mipmap-mdpi/ic_launcher.png
-cp icon-512.png android/app/src/main/res/mipmap-hdpi/ic_launcher.png
-cp icon-512.png android/app/src/main/res/mipmap-xhdpi/ic_launcher.png
-cp icon-512.png android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png
-cp icon-512.png android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png
+          cp icon-512.png android/app/src/main/res/mipmap-hdpi/ic_launcher.png
+          cp icon-512.png android/app/src/main/res/mipmap-xhdpi/ic_launcher.png
+          cp icon-512.png android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png
+          cp icon-512.png android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png
           cat > android/settings.gradle <<'EOF2'
           pluginManagement {
               repositories { google(); mavenCentral(); gradlePluginPortal() }
