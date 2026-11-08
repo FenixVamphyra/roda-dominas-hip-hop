@@ -5,7 +5,7 @@ on:
   push:
     branches: ["main"]
     paths:
-      - - ".github/workflows/build-android-apk-corrigido.yml"
+      - ".github/workflows/build-android-apk-corrigido.yml"
       - "index.html"
       - "icon-192.png"
       - "icon-512.png"
