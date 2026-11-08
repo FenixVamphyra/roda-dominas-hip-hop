@@ -33,9 +33,13 @@ jobs:
       - name: Generate Android wrapper project
         shell: bash
         run: |
-          mkdir -p android/app/src/main/java/br/com/fenixvamphyra/rodadominas android/app/src/main/assets
+          mkdir -p android/app/src/main/java/br/com/fenixvamphyra/rodadominas android/app/src/main/assets android/app/src/main/res/mipmap-mdpi android/app/src/main/res/mipmap-hdpi android/app/src/main/res/mipmap-xhdpi android/app/src/main/res/mipmap-xxhdpi android/app/src/main/res/mipmap-xxxhdpi
           cp index.html android/app/src/main/assets/index.html
-          cp icon-192.png icon-512.png manifest.webmanifest projecao.html android/app/src/main/assets/
+          cp icon-512.png android/app/src/main/res/mipmap-mdpi/ic_launcher.png
+cp icon-512.png android/app/src/main/res/mipmap-hdpi/ic_launcher.png
+cp icon-512.png android/app/src/main/res/mipmap-xhdpi/ic_launcher.png
+cp icon-512.png android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png
+cp icon-512.png android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png
           cat > android/settings.gradle <<'EOF2'
           pluginManagement {
               repositories { google(); mavenCentral(); gradlePluginPortal() }
@@ -70,7 +74,7 @@ jobs:
           EOF2
           cat > android/app/src/main/AndroidManifest.xml <<'EOF2'
           <manifest xmlns:android="http://schemas.android.com/apk/res/android">
-              <application android:theme="@android:style/Theme.Material.Light.NoActionBar" android:label="Roda Domina's" android:hardwareAccelerated="true" android:usesCleartextTraffic="false">
+              <application android:theme="@android:style/Theme.Material.Light.NoActionBar" android:label="Roda Domina's" android:icon="@mipmap/ic_launcher" android:hardwareAccelerated="true" android:usesCleartextTraffic="false">
                   <activity android:name=".MainActivity" android:exported="true" android:configChanges="orientation|screenSize|keyboardHidden">
                       <intent-filter>
                           <action android:name="android.intent.action.MAIN" />
